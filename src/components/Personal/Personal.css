@@ -1,0 +1,19 @@
+.personalForm{
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    gap: 2vh;
+}
+
+.personalForm input{
+    height: 2vh;
+    width: 15vh;
+}
+
+.personalSubmit{
+    height: 2vh;
+    width: 5vh;
+    background-color: rgb(75, 75, 194);
+    color: white;
+    font-weight: bold;
+}

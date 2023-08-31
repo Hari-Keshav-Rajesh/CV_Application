@@ -1,35 +1,48 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { v4 } from 'uuid'
+import Personal from "./components/Personal/Personal"
+import Education from './components/Education/Education'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
-  return (
+    const [personal,setPersonal] = useState([])
+    const personalProps = {personal,setPersonal}
+
+    const [education,setEducation] = useState([{id:v4()}])
+    const [educationList,setEducationList] = useState([])
+    const educationProps = {education,setEducation,educationList,setEducationList}
+
+    return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <h1 className="header">
+            <strong>CV-Generator</strong>
+        </h1>
+        <div className='main'>
+
+            <div className='form'>
+
+                <div className='PersonalForm'>
+                    <h3 className='personalHeader'>Personal Information</h3>
+                    <Personal {...personalProps}/>
+                </div>
+
+                <div className='EducationForm'>
+                    <h3 className='educationHeader'>Education Information</h3>
+                    <Education {...educationProps}/>
+                </div>
+
+            </div>
+
+
+            <div className='CV'>
+
+            </div>
+
+            
+        </div>
     </>
-  )
+    )
 }
 
 export default App

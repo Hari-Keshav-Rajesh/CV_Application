@@ -1,0 +1,35 @@
+.EduForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 2vh;
+}
+
+.educationForm{
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    gap: 2vh;
+    border-width: 0.5vh;
+    border-color: rgb(93, 93, 178);
+    border-style: solid;
+}
+
+.educationSubHeader{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.educationForm input{
+    height: 2vh;
+    width: 15vh;
+}
+
+.educationSubmit{
+    height: 2vh;
+    width: 5vh;
+    background-color: rgb(75, 75, 194);
+    color: white;
+    font-weight: bold;
+}
