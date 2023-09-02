@@ -35,16 +35,16 @@
 }
 
 .educationDelete{
-    height: 2vh;
-    width: 6vh;
+    height: 3vh;
+    width: 8vh;
     background-color: red;
     color: white;
     font-weight: bold;
 }
 
 .educationAdd{
-    height: 2vh;
-    width: 5vh;
+    height: 3vh;
+    width: 7vh;
     background-color: green;
     color: white;
     font-weight: bold;
