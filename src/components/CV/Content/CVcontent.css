@@ -1,0 +1,33 @@
+.contentCV{
+   margin-top: 3vh;
+}
+
+.titleCV{
+    background-color: rgba(128,128,128,0.5);
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    padding:3vh;
+}
+
+.infoCV{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 2vh;
+}
+
+.boxCV{
+    display: flex;
+    justify-content: space-around;
+}
+
+.noDateCV{
+    font-style: italic;
+    font-size: 3vh;
+}
+
+.DateCV{
+    font-size: 4vh;
+}
+

@@ -1,13 +1,28 @@
+.PersonalForm {
+    border-width: 1vh;
+    border-color: #000137;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8vh;
+    margin-right: 10vh;
+}
+.personalHeader {
+    text-align: center;
+}
+
 .personalForm {
     display: flex;
     flex-direction: column;
-    padding: 3vh;
     gap: 2vh;
+    padding-bottom: 3vh;
 }
 
 .personalForm input {
-    height: 2vh;
-    width: 15vh;
+    height: 3vh;
+    width: 20vh;
 }
 
 .personalSubmit {

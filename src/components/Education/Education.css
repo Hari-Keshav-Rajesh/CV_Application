@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 1vh;
-    padding: 2vh;
+    padding: 2vh; 
 }
 
 .educationForm {
@@ -30,6 +30,22 @@
     height: 2vh;
     width: 5vh;
     background-color: rgb(75, 75, 194);
+    color: white;
+    font-weight: bold;
+}
+
+.educationDelete{
+    height: 2vh;
+    width: 6vh;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.educationAdd{
+    height: 2vh;
+    width: 5vh;
+    background-color: green;
     color: white;
     font-weight: bold;
 }
