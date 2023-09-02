@@ -1,31 +1,37 @@
-.header{
-  color: white;
-  background-color: #000137;
-  text-align: center;
-  padding: 5vh;
+.header {
+    color: white;
+    background-color: #000137;
+    text-align: center;
+    padding: 5vh;
 }
 
-.main{
-  display: flex;
+.main {
+    display: flex;
 }
 
-.form{
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
-.PersonalForm{
-  border-width: 1vh;
-  border-color: #000137;
-  border-style: solid;
+.PersonalForm {
+    border-width: 1vh;
+    border-color: #000137;
+    border-style: solid;
 }
-.personalHeader{
-  text-align: center;
+.personalHeader {
+    text-align: center;
 }
 
-.EducationForm{
-  border-width: 1vh;
-  border-color: #000137;
-  border-style: solid;
+.EducationForm {
+    border-width: 1vh;
+    border-color: #000137;
+    border-style: solid;
+}
+
+.WorkForm{
+    border-width: 1vh;
+    border-color: #000137;
+    border-style: solid;
 }

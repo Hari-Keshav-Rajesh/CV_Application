@@ -1,16 +1,16 @@
-.personalForm{
+.personalForm {
     display: flex;
     flex-direction: column;
     padding: 3vh;
     gap: 2vh;
 }
 
-.personalForm input{
+.personalForm input {
     height: 2vh;
     width: 15vh;
 }
 
-.personalSubmit{
+.personalSubmit {
     height: 2vh;
     width: 5vh;
     background-color: rgb(75, 75, 194);
