@@ -4,9 +4,10 @@ import Personal from './components/Personal/Personal'
 import Education from './components/Education/Education'
 import Work from './components/Work/Work'
 import './App.css'
+import Header from './components/CV/Header/Header'
 
 const App = () => {
-    const [personal, setPersonal] = useState([])
+    const [personal, setPersonal] = useState({name:"Example",age:25,number:919191919191,email:"example@gmail.com"})
     const personalProps = { personal, setPersonal }
 
     const [education, setEducation] = useState([{ id: v4() }])
@@ -20,7 +21,12 @@ const App = () => {
 
     const [work, setWork] = useState([{ id: v4() }])
     const [workList, setWorkList] = useState([])
-    const workProps = { work, setWork, workList, setWorkList }
+    const workProps = { 
+        work, 
+        setWork, 
+        workList, 
+        setWorkList,
+    }
 
     return (
         <>
@@ -47,7 +53,9 @@ const App = () => {
                     </div>
                 </div>
 
-                <div className="CV"></div>
+                <div className="CV">
+                    <Header {...personalProps}></Header>
+                </div>
             </div>
         </>
     )

@@ -1,0 +1,34 @@
+.HeaderCV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000137;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 15vh;
+}
+
+.nameCV{
+    text-align: center;
+    font-size: 3vh;
+    padding-bottom: 2vh;
+}
+
+.iconSet{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.numberCV{
+    display: flex;
+    font-size: 2vh;
+}
+
+.numberCV img{
+    height: 2vh;
+    width: 2vh;
+    background-color: white;
+}
