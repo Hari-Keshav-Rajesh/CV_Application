@@ -1,8 +1,7 @@
-# React + Vite
+This is a website made using React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It can be used to build your own CV by just entering your details!!!
 
-Currently, two official plugins are available:
+You can even customise it's appearance!
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Site Link: https://kit2-cv-builder.netlify.app/

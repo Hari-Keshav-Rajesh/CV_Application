@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 1vh;
-    padding: 2vh; 
+    padding: 2vh;
 }
 
 .educationForm {
@@ -34,7 +34,7 @@
     font-weight: bold;
 }
 
-.educationDelete{
+.educationDelete {
     height: 3vh;
     width: 8vh;
     background-color: red;
@@ -42,7 +42,7 @@
     font-weight: bold;
 }
 
-.educationAdd{
+.educationAdd {
     height: 3vh;
     width: 7vh;
     background-color: green;

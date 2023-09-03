@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.dualForm{
+.dualForm {
     display: flex;
     gap: 1vh;
     border-color: #000137;
@@ -38,7 +38,7 @@
     border-style: solid;
 }
 
-.CV{
+.CV {
     width: 100%;
     height: 100%;
     margin-left: 5vh;

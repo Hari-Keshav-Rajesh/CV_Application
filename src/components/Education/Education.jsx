@@ -73,7 +73,7 @@ const Education = (props) => {
                                     end: end[index],
                                 }
                                 props.setEducationList(list)
-                            }} 
+                            }}
                         ></input>
 
                         <input

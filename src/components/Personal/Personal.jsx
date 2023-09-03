@@ -10,11 +10,11 @@ const Personal = (props) => {
     const formSubmit = (event) => {
         event.preventDefault()
         if (name && age && number && email) {
-            const newList = {...props.personal}
+            const newList = { ...props.personal }
             newList.name = name
             newList.age = age
             newList.email = email
-            newList.number =  number
+            newList.number = number
             props.setPersonal(newList)
         } else {
             alert('Please fill personal details')
