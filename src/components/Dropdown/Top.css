@@ -1,0 +1,31 @@
+.labelDrop{
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.menuDrop{
+    height: 2vh;
+    font-size: 1.5vh;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.blue{
+    background-color: rgb(0,0,128);
+    color: rgb(192,192,192);
+}
+
+.green{
+    background-color: rgb(0,100,0);
+    color: beige;
+}
+
+.white{
+    background-color: rgb(192,192,192);
+    color:  black;
+}
+
+.maroon{
+    background-color: maroon;
+    color: gold;
+}

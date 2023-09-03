@@ -12,8 +12,7 @@
 
 .infoCV{
     display: flex;
-    flex-direction: column;
-    gap: 1vh;
+    flex-direction: column; 
     padding: 2vh;
 }
 
