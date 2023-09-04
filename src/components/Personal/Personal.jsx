@@ -10,12 +10,20 @@ const Personal = (props) => {
     const formSubmit = (event) => {
         event.preventDefault()
         if (name && age && number && email) {
-            const newList = { ...props.personal }
-            newList.name = name
-            newList.age = age
-            newList.email = email
-            newList.number = number
-            props.setPersonal(newList)
+            if (age >= 18) {
+                if (number.length === 10) {
+                    const newList = { ...props.personal }
+                    newList.name = name
+                    newList.age = age
+                    newList.email = email
+                    newList.number = number
+                    props.setPersonal(newList)
+                } else {
+                    alert('Enter number of 10 digits')
+                }
+            } else {
+                alert('Minimum age is 18')
+            }
         } else {
             alert('Please fill personal details')
         }

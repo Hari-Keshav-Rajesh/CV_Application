@@ -8,6 +8,7 @@ import Header from './components/CV/Header/Header'
 import CVeducation from './components/CV/Content/CVeducation'
 import CVwork from './components/CV/Content/CVwork'
 import Color from './components/Dropdown/Color'
+import Layout from './components/Layout/Layout'
 
 const App = () => {
     const [personal, setPersonal] = useState({
@@ -17,11 +18,16 @@ const App = () => {
         email: 'example@gmail.com',
     })
     const [color, setColor] = useState('blue')
+    const [layout, setLayout] = useState('top')
     const colorProps = {
         color,
         setColor,
     }
-    const personalProps = { personal, setPersonal, color }
+    const layoutProps = {
+        layout,
+        setLayout,
+    }
+    const personalProps = { personal, setPersonal, color, layout }
 
     const [education, setEducation] = useState([{ id: v4() }])
     const [educationList, setEducationList] = useState([])
@@ -34,6 +40,7 @@ const App = () => {
     const educationListProps = {
         educationList,
         color,
+        layout,
     }
 
     const [work, setWork] = useState([{ id: v4() }])
@@ -47,6 +54,7 @@ const App = () => {
     const workListProps = {
         workList,
         color,
+        layout,
     }
 
     const borderCV = () => {
@@ -60,11 +68,29 @@ const App = () => {
             }
         } else if (color === 'green') {
             return {
-                borderColor: 'beige',
+                borderColor: 'brown',
             }
         } else {
             return {
                 borderColor: 'gold',
+            }
+        }
+    }
+
+    const layoutChange = () => {
+        if (layout === 'left') {
+            return {
+                display: 'flex',
+                minHeight: '90vh',
+            }
+        }
+    }
+
+    const layoutContentChange = () => {
+        if (layout === 'left') {
+            return {
+                width: '100%',
+                marginLeft: '1vh',
             }
         }
     }
@@ -78,6 +104,10 @@ const App = () => {
                 <div className="form">
                     <div className="dropdown">
                         <Color {...colorProps} />
+                    </div>
+
+                    <div className="layout">
+                        <Layout {...layoutProps} />
                     </div>
 
                     <div className="PersonalForm">
@@ -100,10 +130,18 @@ const App = () => {
                     </div>
                 </div>
 
-                <div className="CV" style={borderCV()}>
-                    <Header {...personalProps} />
-                    <CVeducation {...educationListProps} />
-                    <CVwork {...workListProps} />
+                <div
+                    className="CV"
+                    style={{ ...borderCV(), ...layoutChange() }}
+                >
+                    <div className="CVheader">
+                        <Header {...personalProps} />
+                    </div>
+
+                    <div className="detailsCV" style={layoutContentChange()}>
+                        <CVeducation {...educationListProps} />
+                        <CVwork {...workListProps} />
+                    </div>
                 </div>
             </div>
         </>

@@ -1,0 +1,16 @@
+.layoutBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layoutButtons {
+    display: flex;
+    gap: 2vh;
+}
+
+.layoutButtons button {
+    border-color: black;
+    border-style: solid;
+}
