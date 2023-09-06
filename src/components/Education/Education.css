@@ -35,16 +35,16 @@
 }
 
 .educationDelete {
-    height: 3vh;
-    width: 8vh;
+    height: fit-content;
+    width: fit-content;
     background-color: red;
     color: white;
     font-weight: bold;
 }
 
 .educationAdd {
-    height: 3vh;
-    width: 7vh;
+    height: fit-content;
+    width: fit-content;
     background-color: green;
     color: white;
     font-weight: bold;

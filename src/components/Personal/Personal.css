@@ -24,10 +24,10 @@
     height: 3vh;
     width: 20vh;
 }
-
+ 
 .personalSubmit {
-    height: 3vh;
-    width: 6vh;
+    height: fit-content;
+    width: fit-content;
     background-color: rgb(75, 75, 194);
     color: white;
     font-weight: bold;
